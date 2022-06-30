@@ -89,7 +89,8 @@ export default function Home() {
       setLoading(false);
     } catch (error) {
       console.error(error);
-      window.alert(error.data.message);
+      //window.alert(error.data.message);
+      
     }
   };
 
@@ -287,9 +288,7 @@ export default function Home() {
       );
     } else if (proposals.length === 0) {
       return (
-        <div className={styles.description}>
-          No proposals have been created
-        </div>
+        <div className={styles.description}>No proposals have been created</div>
       );
     } else {
       return (
